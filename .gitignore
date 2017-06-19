@@ -1,0 +1,11 @@
+# OS or Editor folders
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+*/target
+.idea
+*.iml
+*.DS_Store
+.lazybones
