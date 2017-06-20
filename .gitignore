@@ -9,3 +9,5 @@ Thumbs.db
 *.iml
 *.DS_Store
 .lazybones
+*.metadata
+*.classpath
