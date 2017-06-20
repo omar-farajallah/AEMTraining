@@ -1,0 +1,7 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-placeholder" data-emptytext="Slalom Title"></div>
+<h2 class="${properties.color @ context='styleString'}">${properties.title}</h2>
+<p data-sly-test.isAlaska="${properties.state == 'Alaska'}">Selected state is Alaska</p>
+<p data-sly-test="${!isAlaska}">Alaska is not selected</p>
+<ul data-sly-list.child="${currentPage.listChildren}">
+	<li>${child.title}</li>
+</ul>

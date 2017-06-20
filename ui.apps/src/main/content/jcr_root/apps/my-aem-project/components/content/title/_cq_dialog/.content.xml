@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <columns
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <title
+                    		jcr:primaryType="nt:unstructured"
+                    		fieldLabel="Title"
+                    		fieldDescription="This text will appear in the component"
+                    		required="{Boolean}true"
+                    		sling:resourceType="granite/ui/components/foundation/form/textfield"
+                    		name="./title"/>
+                 	<state
+                 		jcr:primaryType="nt:unstructured"
+                 		fieldLabel="State"
+                 		sling:resourceType="granite/ui/components/foundation/form/select"
+                 		name="./state">
+                 		<items jcr:primaryType="nt:unstructured">
+	                 		<ak
+	                 			text="Alaska"
+	                 			value="Alaska"
+	                 			jcr:primaryType="nt:unstructured"/>
+	                			<wa
+	                 			text="Washington"
+	                 			value="Washington"
+	                 			jcr:primaryType="nt:unstructured"/>
+	                 	</items>
+                		</state>
+                		<color
+                			jcr:primaryType="nt:unstructured"
+                			text="Color"
+                			sling:resourceType="granite/ui/components/foundation/form/radiogroup"
+                			name="./color">
+                			<items jcr:primaryType="nt:unstructured">
+                				<white
+                					jcr:primaryType="nt:unstructured"
+                					text="White"
+                					value="white"
+                					sling:resourceType="granite/ui/components/foundation/form/radio"
+                					checked="{Boolean}true"/>
+                				<black
+                					jcr:primaryType="nt:unstructured"
+                					text="Black"
+                					value="black"
+                					sling:resourceType="granite/ui/components/foundation/form/radio"/>
+                			</items>
+               		</color>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>
