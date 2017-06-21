@@ -5,3 +5,10 @@
 <ul data-sly-list.child="${currentPage.listChildren}">
 	<li>${child.title}</li>
 </ul>
+
+<p data-sly-use.slalomTitle="com.slalom.core.components.SlalomTitle">Use class value: ${slalomTitle.message}</p>
+
+<div data-sly-use.titleJS="title.js">
+	<p>Page title: ${titleJS.pageTitle}</p>
+	<p>Selected state: ${titleJS.state}</p>
+</div>
